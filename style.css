@@ -1,0 +1,116 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1C1C1C;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #111; /* Cor de fundo neutra */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #A9A9A9; /* Cor do texto */
+}
+
+/* Botão de Menu */
+#openBtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent; /* Remove fundo do botão */
+    border: none; /* Remove borda */
+    color: #A9A9A9; /* Cor do ícone */
+    outline: none; /* Remove efeito de foco */
+}
+
+#openBtn:hover {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+/* Barra Lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #A9A9A9;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Responsividade */
+.sidebar.open {
+    width: 250px;
+}
+
+#titulo a {
+    text-decoration: none;
+    color: #A9A9A9;
+    text-shadow: 0px 0px 30px #FFFFFF;
+}
+
+#titulo a:hover {
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #A9A9A9;
+}
+
+.textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajusta a altura para compensar o cabeçalho */
+    text-align: center;
+    padding: 0 20px;
+}
+
+#texto1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #222; /* Cor de fundo opcional para contraste */
+    padding: 20px;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    max-width: 90%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao redor do texto */
+}
+
+@media (max-width: 600px) {
+    #texto1 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
